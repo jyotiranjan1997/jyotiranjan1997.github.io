@@ -1,0 +1,20 @@
+.Body {
+  background-image: url(https://media.istockphoto.com/vectors/studio-room-in-dark-blue-background-with-copy-spaceluxury-gallery-vector-id1326304939?k=20&m=1326304939&s=612x612&w=0&h=XK9D-KMpzslC2RXLYhLU0H0GsBS00RHtecHJOlZIh0U=);   
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  position: relative;
+  height: 600px;
+  width:100%;
+  display: felx;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* //https://i.ibb.co/cCTtDZK/header-banner-6.jpg */
+.wave {
+  position: absolute;
+  bottom: -12%;
+}
