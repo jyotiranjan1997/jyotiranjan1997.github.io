@@ -1,24 +1,12 @@
 import {
   Box,
-  Grid,
   Flex,
-  Image,
-  Button,
   Spacer,
   Show,
   Hide,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  PopoverHeader,
-  PopoverBody,
-  PopoverFooter,
-  PopoverArrow,
-  PopoverCloseButton,
-  PopoverAnchor,
   Center,
   Heading,
-  Text
+  Text,
 } from "@chakra-ui/react";
 
 import React, { useContext } from "react";
@@ -29,13 +17,14 @@ export default function Navbar() {
   return (
     <Flex
       w="full"
+     
       alignItems="center"
       gap="2"
       p={5}
       pl="40px"
       pr="40px"
       justifyContent="space-between"
-      bg="transperent"
+      bg="transparent"
     >
       <Box>
         <Link to="/">

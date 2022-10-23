@@ -1,0 +1,16 @@
+.Github-prfl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-top: 20px;
+}
+.Github{
+    width:90%;
+    margin: auto;
+
+}
+
+.git-status{
+    margin-top: 20px;
+}

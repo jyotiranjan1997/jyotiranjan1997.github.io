@@ -1,2 +1,54 @@
+.about {
+  width: 90%;
+  margin: auto;
+  margin-top: 3%;
+}
+.about-containt {
+    display: flex;
+    gap:5%;
+  margin-top: 30px;
+  border: 3px solid grey;
+  border-radius: 30px;
+  padding: 5%;
+}
+.profile-image{
+    width:100%;
+    margin:auto
+}
 
+.left{
+    
+     margin: auto;
+     border: 1px solid black;
+     border-radius: 15px;
+}
+.left>img{
+   border-radius: 15px; 
+}
+.right{
+    margin: auto;
+}
 
+.heading{
+    text-align: center;
+}
+
+.btn-resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 700px){
+.about-containt {
+    display: grid;
+}
+
+.left{
+     width:70%;
+     margin: auto;
+}
+
+}

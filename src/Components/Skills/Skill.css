@@ -1,0 +1,11 @@
+.hero-image {
+ margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+.container{
+    text-align: center;
+ width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}

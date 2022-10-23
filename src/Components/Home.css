@@ -1,17 +1,43 @@
 .Body {
-  background-image: url(https://media.istockphoto.com/vectors/studio-room-in-dark-blue-background-with-copy-spaceluxury-gallery-vector-id1326304939?k=20&m=1326304939&s=612x612&w=0&h=XK9D-KMpzslC2RXLYhLU0H0GsBS00RHtecHJOlZIh0U=);   
+  /* background-image: url(https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png);   
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: 50%; */
+
+  width: 100%;
+  height: 90vh;
   position: relative;
-  height: 600px;
-  width:100%;
-  display: felx;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
+}
+.BackgroundImg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+.Body::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+  opacity: 0.7;
+}
+.subBody {
+  width: 100%;
+  height: 100%;
   color: #fff;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  top: 0;
+}
+#Navbar {
+  position: sticky;
+  top: 0;
 }
 /* //https://i.ibb.co/cCTtDZK/header-banner-6.jpg */
 .wave {
