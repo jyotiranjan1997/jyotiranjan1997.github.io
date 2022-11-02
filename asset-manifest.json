@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.d5f16a9d.css",
-    "main.js": "/static/js/main.f4ace638.js",
+    "main.css": "/static/css/main.40d103b2.css",
+    "main.js": "/static/js/main.83a1e6f0.js",
     "static/js/787.16e2f7f2.chunk.js": "/static/js/787.16e2f7f2.chunk.js",
     "static/media/muna.png": "/static/media/muna.5655cbf5be08e8116d4b.png",
     "static/media/muna2.png": "/static/media/muna2.67a84dd304bc67578034.png",
     "static/media/expedia.jpg": "/static/media/expedia.c619aed833b16f003a27.jpg",
     "static/media/Tmetric.jpg": "/static/media/Tmetric.c875c83e674fbbf12e4b.jpg",
     "static/media/urbanCompany.jpg": "/static/media/urbanCompany.1bea4504aedd7a650a9e.jpg",
+    "static/media/Jyotiranjan.pdf": "/static/media/Jyotiranjan.17ed0dc33e64b9046ec7.pdf",
     "static/media/linkedin-bounce.gif": "/static/media/linkedin-bounce.a06c9bce71d47567be0f.gif",
     "static/media/icons8-github.gif": "/static/media/icons8-github.7d909b64afc22f8b5ad3.gif",
     "index.html": "/index.html",
-    "main.d5f16a9d.css.map": "/static/css/main.d5f16a9d.css.map",
-    "main.f4ace638.js.map": "/static/js/main.f4ace638.js.map",
+    "main.40d103b2.css.map": "/static/css/main.40d103b2.css.map",
+    "main.83a1e6f0.js.map": "/static/js/main.83a1e6f0.js.map",
     "787.16e2f7f2.chunk.js.map": "/static/js/787.16e2f7f2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d5f16a9d.css",
-    "static/js/main.f4ace638.js"
+    "static/css/main.40d103b2.css",
+    "static/js/main.83a1e6f0.js"
   ]
 }
