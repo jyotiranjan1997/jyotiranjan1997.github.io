@@ -1,26 +1,28 @@
 .about {
   width: 90%;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 3% 2%;
 }
 .about-containt {
     display: flex;
     gap:5%;
   margin-top: 30px;
-  border: 3px solid grey;
+  box-shadow: rgba(112, 109, 109, 0.35) 0px 5px 15px;
   border-radius: 30px;
   padding: 5%;
 }
 .profile-image{
     width:100%;
-    margin:auto
+    margin:auto;
+    
 }
 
 .left{
-    
+    width:100%;
      margin: auto;
      border: 1px solid black;
      border-radius: 15px;
+     
 }
 .left>img{
    border-radius: 15px; 
@@ -30,6 +32,7 @@
 }
 
 .heading{
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -39,7 +42,56 @@
     align-items: center;
     margin:auto;
     margin-top: 25px;
+    margin-bottom: 15px;
 }
+.heading .lines{
+    position:relative;
+}
+.heading .line{
+    padding: 2%;
+}
+
+.heading .lines::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left:50%;
+    width:170px;
+    height:4px;
+    margin-top: 15px;
+    background: #4FD1C5;
+    transform: translateX(-50%) translateY(20%) ;
+}
+
+.right>p{
+    align-items: center;
+    font-size: 16px;
+    text-align:left;
+}
+
+/* 
+.heading .lines::after{
+     content: " who i am  ";
+    position: absolute;
+    bottom: -12px;
+    left:50%;
+    padding:5px;
+  color: #F56565;
+    transform: translateX(-50%);
+} */
+
+
+/* .diamond{
+    height:40px;
+    width: 40px;
+    border:2px solid #F56565;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin: auto;
+    transform: rotate(45deg);
+} */
 
 @media only screen and (min-width: 300px) and (max-width: 700px){
 .about-containt {
@@ -50,5 +102,36 @@
      width:70%;
      margin: auto;
 }
+
+.right>p{
+    width:90%;
+    margin: auto;
+    font-size: 12px;
+}
+
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px){
+.right>p{
+    width:90%;
+    margin: auto;
+    font-size: 8px;
+}
+
+.left{
+    width:60%;
+    margin:auto;
+}
+
+
+}
+
+@media only screen and (min-width: 400px) and (max-width: 900px){
+.right>p{
+    
+    font-size: 10px;
+}
+
 
 }

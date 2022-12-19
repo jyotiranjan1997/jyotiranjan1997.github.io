@@ -1,0 +1,40 @@
+.contact{
+   padding: 2%;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+   box-shadow: rgba(82, 81, 81, 0.35) 0px 5px 15px;
+}
+
+.form-control{
+    padding: 3%;
+    border-radius: 15px;
+    
+}
+
+
+.Container-contact{
+    margin:auto;
+    display: flex;
+    justify-content:space-around;
+    margin-top: 30px;
+   
+}
+
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 500px){
+
+    .Container-contact{
+
+        display: grid;
+        
+    }
+
+    .getin-touch{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,11 +1,44 @@
 .hero-image {
- margin-top: 20px;
+  margin-top: 40px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
-.container{
-    text-align: center;
- width: 80%;
+.container {
+  text-align: center;
+  width: 80%;
   margin: auto;
   margin-top: 20px;
 }
+
+.hero-image > div {
+  cursor: pointer;
+  transform-origin:left;
+}
+
+.hero-image > div {
+  text-align: center;
+  padding: 2%;
+  box-shadow: rgba(112, 109, 109, 0.35) 0px 5px 15px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+
+img:hover{
+  transform: scale(1.1);
+  z-index: 2;
+  transition: 3000ms;
+
+}
+
+
+/* 
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .hero-image {
+    display: flex;
+    flex-wrap: wrap;
+  }
+} */

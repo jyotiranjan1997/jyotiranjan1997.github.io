@@ -8,9 +8,23 @@
 .Github{
     width:90%;
     margin: auto;
+    margin-top: 50px;
 
 }
 
 .git-status{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
+    padding: 4%;;
+     box-shadow: rgba(99, 97, 97, 0.35) 0px 5px 15px;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 560px){
+    .Github-prfl{
+        display:grid;
+    }
 }

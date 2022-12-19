@@ -1,29 +1,30 @@
 import {
   Box,
-  Text,
   Flex,
-  HStack,
   Heading,
   Image,
-  Container,
-  Spacer,
-  Grid,
   Center,
   Show,
   Hide,
+  Button,
+  Spacer,
+Link
 } from "@chakra-ui/react";
-import React, { useContext } from "react";
+import React from "react";
 import Typical from "react-typical";
 import linkdin from "./Images/linkedin-bounce.gif";
 import Github from "./Images/icons8-github.gif";
+import Twitter from "./Images/twitter.jpg";
+import { Link as  Hashlink } from "react-scroll";
+import muna2 from "./Images/muna2.png";
 
-import { HashLink as Link } from "react-router-hash-link";
+
 
 export default function MyProfile() {
   return (
     <div>
       <Show breakpoint="(min-width: 900px)">
-        <Flex pl="5%" gap="25%" mt="40px">
+        <Flex pl="5%" gap="20%" mt="40px">
           <Box>
             <Center>
               <Heading display="flex">
@@ -33,56 +34,121 @@ export default function MyProfile() {
                     src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
                     w="50"
                     h={"50px"}
-                  ></Image>{" "}
+                  ></Image>
                 </Center>
               </Heading>
             </Center>
             <Box>
-              <Heading fontSize="3xl">My name is Jyotiranjan Mohanty</Heading>
+              <Center>
+                <Heading fontSize="3xl">My name is Jyotiranjan Mohanty</Heading>
+              </Center>
             </Box>
             <Spacer />
             <Box mt="50px">
-              <Heading color="red.300" fontSize="3xl">
-                I am a{" "}
-                <Typical
-                  loop={Infinity}
-                  steps={["Full Stack Developer", 1000, "Youtuber", 1000]}
-                />
+              <Heading color="teal.300" fontSize="2xl">
+                <Center color="white">I am a </Center>
+                <Center>
+                  <Typical
+                    steps={[
+                      "Full Stack Devloper",
+                      3000,
+                      "MERN Devloper",
+                      3000,
+                      "Youtuber",
+                      3000,
+                    ]}
+                    loop={Infinity}
+                    wrapper="p"
+                  />
+                </Center>
               </Heading>
-              <Center mt="20px" ml="30px">
-                <Flex gap="20px">
-                  <Image src={linkdin} w="10%" borderRadius="30%" />
-                  <Image src={Github} w="10%" borderRadius="60%" />{" "}
+            </Box>
+            <Center mt="20px" ml="30px">
+              <Center gap="15px">
+                <Link
+                  w="7%"
+                  href="https://www.linkedin.com/in/jyoti-ranjan-mohanty-81a240193/"
+                  isExternal="true"
+                >
+                  <Image src={linkdin} borderRadius="30%" />
+                </Link>
+                <Link
+                  w="7%"
+                  href="https://github.com/jyotiranjan1997/"
+                  isExternal="true"
+                >
+                  <Image src={Github} borderRadius="60%" />
+                </Link>
+                <Link
+                  w="7%"
+                  href="https://twitter.com/JYOTIRA38754604"
+                  isExternal="true"
+                >
+                  <Image src={Twitter} borderRadius="60%" />
+                </Link>{" "}
+              </Center>
+            </Center>
+            <Box mt="25px">
+              <Center>
+                <Flex gap="10%">
+                  <Button bgColor="teal" colorScheme="green">
+                    <Hashlink
+                      to="contact"
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={1000}
+                      activeClassName="selected"
+                    >
+                      Contact
+                    </Hashlink>
+                  </Button>
+                  <Button bgColor="teal" colorScheme="green">
+                    <Hashlink
+                      to="project"
+                      activeClass="active"
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={1000}
+                      activeClassName="selected"
+                    >
+                      Projects
+                    </Hashlink>{" "}
+                  </Button>
                 </Flex>
               </Center>
             </Box>
           </Box>
-          <Box ml="30px">
+          <Box right="2%">
             <Image
-              src="https://camo.githubusercontent.com/c6deab2f711f5000f9f6fc6e38a4f413ed50392c11a2938a351155cb137c6c81/68747470733a2f2f692e70696e696d672e636f6d2f6f726967696e616c732f36362f38332f33652f36363833336530376436666239656235643732346534376430633831343238352e6769663f7261773d74727565"
-              borderRadius="3rem"
-              w="60%"
+              id="my-prfl"
+              src={muna2}
+              w="80%"
+              borderRadius="60%"
+              bgColor="teal"
             />
           </Box>
-        </Flex>{" "}
+        </Flex>
       </Show>
 
       <Hide breakpoint="(min-width: 900px)">
         <Center mt="30px">
           <Box>
             <Center>
-              <Heading display="flex">
+              <Heading display="flex" fontSize={{ sm: "40px", md: "40px" }}>
                 Hi !
                 <Image
                   src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
-                  w="30"
-                  h={"30px"}
+                  w="20px"
+                  h={"20px"}
                 ></Image>
               </Heading>
             </Center>
             <Center>
               <Box>
-                <Heading fontSize={{ md: "30px" }}>
+                <Heading fontSize={{ sm: "40px", md: "35px", lg: "35px" }}>
                   My name is Jyotiranjan Mohanty
                 </Heading>
               </Box>
@@ -90,40 +156,84 @@ export default function MyProfile() {
             <Spacer />
             <Box mt="50px">
               <Center>
-                <Heading color="red.300" fontSize={{ md: "30px" }}>
+                <Heading mr="5px" fontSize={{ sm: "30px", md: "40px" }}>
                   I am a{" "}
                 </Heading>
-                <Heading color="red.300" fontSize={{ md: "30px" }}>
+                <Heading color="teal.300" fontSize={{ sm: "30px" }}>
                   <Typical
-                    loop={Infinity}
                     steps={[
-                      "Full Stack Devloper",
-                      1000,
-                      "MERN Devloper",
-                      1000,
-                      "Youtuber",
-                      1000,
+                      " Full Stack Devloper",
+                      2000,
+                      " MERN Devloper",
+                      2000,
+                      " Youtuber",
+                      2000,
                     ]}
+                    loop={Infinity}
+                    wrapper="p"
                   />
                 </Heading>
-              </Center>
-              <Center mt="20px" ml="30px">
-                <Flex gap="20px">
-                  <Image
-                    src={linkdin}
-                    w="10%"
-                    borderRadius="30%"
-                  />
-                  <Image
-                    src={Github}
-                    w="10%"
-                    borderRadius="60%"
-                  />{" "}
-                </Flex>
               </Center>
             </Box>
           </Box>
         </Center>
+        <Center mt="20px" ml="30px">
+          <Center display="flex" gap="18px">
+            <Link
+              w="7%"
+              href="https://www.linkedin.com/in/jyoti-ranjan-mohanty-81a240193/"
+              isExternal="true"
+            >
+              <Image src={linkdin} borderRadius="30%" />
+            </Link>
+            <Link
+              w="7%"
+              href="https://github.com/jyotiranjan1997/"
+              isExternal="true"
+            >
+              <Image src={Github} borderRadius="60%" />
+            </Link>
+            <Link
+              w="7%"
+              href="https://twitter.com/JYOTIRA38754604"
+              isExternal="true"
+            >
+              <Image src={Twitter} borderRadius="60%" />
+            </Link>{" "}
+          </Center>
+        </Center>
+        <Box mt="25px">
+          <Center>
+            <Flex gap="10%">
+              <Button bgColor="teal" colorScheme="green">
+                <Hashlink
+                  to="contact"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  activeClassName="selected"
+                >
+                  Contact
+                </Hashlink>
+              </Button>
+              <Button bgColor="teal" colorScheme="green">
+                <Hashlink
+                  to="project"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={1000}
+                  activeClassName="selected"
+                >
+                  Projects
+                </Hashlink>
+              </Button>
+            </Flex>
+          </Center>
+        </Box>
       </Hide>
     </div>
   );
