@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.a1be9380.css",
-    "main.js": "/static/js/main.285a3775.js",
+    "main.js": "/static/js/main.c9a87834.js",
     "static/js/787.16e2f7f2.chunk.js": "/static/js/787.16e2f7f2.chunk.js",
+    "static/media/kfc.png": "/static/media/kfc.390f52bec6af7dcdfbd5.png",
+    "static/media/preetypink.png": "/static/media/preetypink.02f962b06b99be6e8a79.png",
     "static/media/muna.png": "/static/media/muna.5655cbf5be08e8116d4b.png",
     "static/media/muna2.png": "/static/media/muna2.67a84dd304bc67578034.png",
     "static/media/movieApp.jpg": "/static/media/movieApp.77348c59b81f7ff6eeb2.jpg",
@@ -10,15 +12,16 @@
     "static/media/expedia.jpg": "/static/media/expedia.c619aed833b16f003a27.jpg",
     "static/media/Tmetric.jpg": "/static/media/Tmetric.c875c83e674fbbf12e4b.jpg",
     "static/media/urbanCompany.jpg": "/static/media/urbanCompany.1bea4504aedd7a650a9e.jpg",
+    "static/media/ReactBootstrap.png": "/static/media/ReactBootstrap.f8f5489694480893b02f.png",
     "static/media/linkedin-bounce.gif": "/static/media/linkedin-bounce.a06c9bce71d47567be0f.gif",
     "static/media/icons8-github.gif": "/static/media/icons8-github.7d909b64afc22f8b5ad3.gif",
     "index.html": "/index.html",
     "main.a1be9380.css.map": "/static/css/main.a1be9380.css.map",
-    "main.285a3775.js.map": "/static/js/main.285a3775.js.map",
+    "main.c9a87834.js.map": "/static/js/main.c9a87834.js.map",
     "787.16e2f7f2.chunk.js.map": "/static/js/787.16e2f7f2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1be9380.css",
-    "static/js/main.285a3775.js"
+    "static/js/main.c9a87834.js"
   ]
 }
