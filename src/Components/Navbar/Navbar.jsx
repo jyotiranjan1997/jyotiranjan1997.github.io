@@ -13,8 +13,8 @@ import { Link } from "react-scroll";
 import SideNav from "./SideNav";
 import Resume from "../Images/Jyotiranjan.pdf";
 import "./Navbar.css";
-
-export default function Navbar({ navbar }) {
+import DayNightToggle from "react-day-and-night-toggle";
+export default function Navbar({ navbar, handleDark, isDarkMode }) {
   return (
     <Flex
       w="full"
@@ -50,7 +50,7 @@ export default function Navbar({ navbar }) {
       </Box>
       <Spacer />
       <Show breakpoint="(min-width: 1000px)">
-        <Flex gap="5">
+        <Flex gap="9">
           <Center>
             <Link
               to="/"
@@ -133,11 +133,14 @@ export default function Navbar({ navbar }) {
               </a>
             </Button>
           </Center>
+          <Center>
+            <DayNightToggle onChange={handleDark} checked={isDarkMode} />
+          </Center>
         </Flex>
       </Show>
       <Show breakpoint="(max-width: 999px)">
         <div className="sidebar">
-          <SideNav />
+          <SideNav handleDark={handleDark} isDarkMode={isDarkMode} />
         </div>
       </Show>
     </Flex>

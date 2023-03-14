@@ -7,25 +7,27 @@ import {
   Center,
   Flex,
   Icon,
+  Link,
+  
 } from "@chakra-ui/react";
 import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
-
 import { Textarea } from "@chakra-ui/react";
 import React, { useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import { FaGithub, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
 import "./Contact.css";
 import { useState } from "react";
 
+
 let intialState = {
   name: "",
-  email:"",
+  email: "",
   text: "",
-  subject:"",
+  subject: "",
 };
 
 export default function Contact() {
- let [data, setData] = useState(intialState);
+  let [data, setData] = useState(intialState);
   const form = useRef();
 
   const toast = useToast();
@@ -44,7 +46,6 @@ export default function Contact() {
     e.preventDefault();
 
     if (data.name === "" || data.text === "" || data.email === "") {
-      
       emailjs
         .sendForm(
           "service_23c6ocq",
@@ -63,8 +64,8 @@ export default function Contact() {
             let Item = "error";
             handleClick(Item);
           }
-      );
-      setData(intialState)
+        );
+      setData(intialState);
     } else {
       emailjs
         .sendForm(
@@ -84,15 +85,13 @@ export default function Contact() {
             let Item = "error";
             handleClick(Item);
           }
-      );
-      
+        );
+
       setData(intialState);
     }
   };
   console.log(data);
-  useEffect(() => {
-    
-  },[data])
+  useEffect(() => {}, [data]);
   return (
     <div className="contact">
       <div className="heading">
@@ -103,21 +102,18 @@ export default function Contact() {
       <div className="Container-contact">
         <div className="getin-touch">
           <div>
-            <Text fontSize="30px" mb="8%" color="teal">
+            <Text fontSize="30px" mb="7%" color="teal">
               Get in touch
             </Text>
             <Flex mb="15px" gap="10px">
               <Center>
-                
                 <Icon as={EmailIcon} color="teal" />
               </Center>
 
               <Center>
-           
                 <Text>mohanty.ryzen@gmail.com </Text>
               </Center>
             </Flex>
-            <Center></Center>
             <Flex mb="15px" gap="10px">
               <Center>
                 <Icon as={PhoneIcon} color="teal" />
@@ -126,6 +122,27 @@ export default function Contact() {
                 <Text>+91 06371660063</Text>
               </Center>
             </Flex>
+
+            <Flex mb="15px" gap="10px">
+              <Link href="https://github.com/jyotiranjan1997" isExternal>
+                <FaGithub size="25px" />
+              </Link>
+
+              <Link
+                href="https://www.linkedin.com/in/jyoti-ranjan-mohanty-81a240193/"
+                isExternal="true"
+              >
+                <FaLinkedin size="25px" />
+              </Link>
+              <Link
+                href="https://twitter.com/JYOTIRA38754604"
+                isExternal="true"
+              >
+                <FaTwitterSquare size="25px" />
+              </Link>
+            </Flex>
+
+            <div></div>
           </div>
         </div>
 
@@ -155,12 +172,12 @@ export default function Contact() {
                 placeholder="Subject"
                 focusBorderColor="teal.400"
                 value={data.subject}
-                onChange={(e)=>setData({...data,subject:e.target.value})}
+                onChange={(e) => setData({ ...data, subject: e.target.value })}
               />
             </Box>
             <Box>
               <Textarea
-                fontSize={["18px","18px","20px","20px"]}
+                fontSize={["18px", "18px", "20px", "20px"]}
                 focusBorderColor="teal.400"
                 name="message"
                 placeholder="Here is write your message"
@@ -176,6 +193,8 @@ export default function Contact() {
                 type="submit"
                 value="Send"
                 placeholder="Submit"
+                color="white"
+                cursor="pointer"
               />
             </Center>
           </form>

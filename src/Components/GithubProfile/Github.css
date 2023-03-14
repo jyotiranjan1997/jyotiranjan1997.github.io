@@ -4,6 +4,7 @@
     align-items: center;
     gap:30px;
     margin-top: 20px;
+     
 }
 .Github{
     width:90%;
@@ -13,12 +14,11 @@
 }
 
 .git-status{
-    margin: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     margin-top: 20px;
-    padding: 4%;;
+    padding: 4%;
      box-shadow: rgba(99, 97, 97, 0.35) 0px 5px 15px;
 }
 

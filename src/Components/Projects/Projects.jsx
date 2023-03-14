@@ -5,8 +5,6 @@ import urbanCompany from "../Images/urbanCompany.jpg";
 import expedia from "../Images/expedia.jpg";
 import tmetric from "../Images/Tmetric.jpg";
 import movie from "../Images/movieApp.jpg";
-import "swiper/css";
-import "swiper/css/pagination";
 import Project1 from "./Project1";
 
 export default function Project() {

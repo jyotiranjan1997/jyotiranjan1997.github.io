@@ -8,17 +8,16 @@ import {
   Hide,
   Button,
   Spacer,
-Link
+  Link,
 } from "@chakra-ui/react";
 import React from "react";
-import Typical from "react-typical";
+
 import linkdin from "./Images/linkedin-bounce.gif";
 import Github from "./Images/icons8-github.gif";
 import Twitter from "./Images/twitter.jpg";
-import { Link as  Hashlink } from "react-scroll";
+import { Link as Hashlink } from "react-scroll";
 import muna2 from "./Images/muna2.png";
-
-
+import Typewriter from "typewriter-effect";
 
 export default function MyProfile() {
   return (
@@ -48,17 +47,18 @@ export default function MyProfile() {
               <Heading color="teal.300" fontSize="2xl">
                 <Center color="white">I am a </Center>
                 <Center>
-                  <Typical
-                    steps={[
-                      "Full Stack Devloper",
-                      3000,
-                      "MERN Devloper",
-                      3000,
-                      "Youtuber",
-                      3000,
-                    ]}
-                    loop={Infinity}
-                    wrapper="p"
+                  <Typewriter
+                    options={{
+                      autoStart: true,
+                      loop: true,
+                      delay: 60,
+                      strings: [
+                        "Full Stack Devloper",
+                        "MERN Devloper",
+                        "Youtuber",
+                        "Problem Solver",
+                      ],
+                    }}
                   />
                 </Center>
               </Heading>
@@ -137,7 +137,10 @@ export default function MyProfile() {
         <Center mt="30px">
           <Box>
             <Center>
-              <Heading display="flex" fontSize={{ sm: "40px", md: "40px" }}>
+              <Heading
+                display="flex"
+                fontSize={["20px", "30px", "30px", "40px"]}
+              >
                 Hi !
                 <Image
                   src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
@@ -148,7 +151,7 @@ export default function MyProfile() {
             </Center>
             <Center>
               <Box>
-                <Heading fontSize={{ sm: "40px", md: "35px", lg: "35px" }}>
+                <Heading fontSize={["17px", "30px", "30px", "40px"]}>
                   My name is Jyotiranjan Mohanty
                 </Heading>
               </Box>
@@ -156,21 +159,22 @@ export default function MyProfile() {
             <Spacer />
             <Box mt="50px">
               <Center>
-                <Heading mr="5px" fontSize={{ sm: "30px", md: "40px" }}>
+                <Heading mr="5px" fontSize={{ sm: "30px", md: "35px" }}>
                   I am a{" "}
                 </Heading>
-                <Heading color="teal.300" fontSize={{ sm: "30px" }}>
-                  <Typical
-                    steps={[
-                      " Full Stack Devloper",
-                      2000,
-                      " MERN Devloper",
-                      2000,
-                      " Youtuber",
-                      2000,
-                    ]}
-                    loop={Infinity}
-                    wrapper="p"
+                <Heading color="teal.300" fontSize={{ sm: "30px", md: "35px" }}>
+                  <Typewriter
+                    options={{
+                      autoStart: true,
+                      loop: true,
+                      delay: 60,
+                      strings: [
+                        "Full Stack Devloper",
+                        "MERN Devloper",
+                        "Youtuber",
+                        "Problem Solver",
+                      ],
+                    }}
                   />
                 </Heading>
               </Center>
@@ -199,7 +203,7 @@ export default function MyProfile() {
               isExternal="true"
             >
               <Image src={Twitter} borderRadius="60%" />
-            </Link>{" "}
+            </Link>
           </Center>
         </Center>
         <Box mt="25px">

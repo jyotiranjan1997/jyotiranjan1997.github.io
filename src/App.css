@@ -1,10 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 .App {
-  text-align: center;
+  margin-right: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(https://img.freepik.com/free-photo/gradient-blue-abstract-background-smooth-dark-blue-with-black-vignette-studio_1258-68067.jpg?w=740&t=st=1666627742~exp=1666628342~hmac=764a535af7326f77ff043feeb1aa94547c48ef82f527d44c61bd9c1d81d1968e);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  /* overflow-x: hidden; */
+}
+* {
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App2 {
+  margin-right: 0;
+  font-family: "Montserrat", sans-serif;
+  /* overflow-x: hidden; */
 }
 
 @media (prefers-reduced-motion: no-preference) {

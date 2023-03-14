@@ -1,23 +1,14 @@
-
-
 .Body {
-  /* background-image: url(https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png);   
+  /* background-image: url(https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%; */
- 
   width: 100%;
+  margin: auto;
   height: 90vh;
-  position: relative;
   overflow-wrap: break-word;
 }
-.Home{
-   background-image: url(https://img.freepik.com/free-photo/gradient-blue-abstract-background-smooth-dark-blue-with-black-vignette-studio_1258-68067.jpg?w=740&t=st=1666627742~exp=1666628342~hmac=764a535af7326f77ff043feeb1aa94547c48ef82f527d44c61bd9c1d81d1968e);
-   background-size: cover;
-    color:white;
-    position: relative;
 
-}
 .BackgroundImg {
   width: 100%;
   height: 100%;
@@ -36,41 +27,33 @@
   left: 0;
   top: 0;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.6;
 }
-.subBody {
+.subBody2 {
   width: 100%;
   height: 100%;
   color: #fff;
   position: absolute;
   top: 0;
 }
+.over{
+  overflow-x: hidden
+}
 #Navbar {
   position: sticky;
+  z-index: 15555;
   top: 0;
- 
-  
-  z-index: 1555;
 }
 
-#Navbar2{
-   position: sticky;
+#Navbar2 {
+  position: sticky;
   top: 0;
-  background-color:  teal;
-  
-  z-index: 15;
+  background-color: teal;
+  z-index: 15555;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 400px){
-
-
-
-
-
-.Body{
-   height: 70vh;
-}
-
-
-
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .Body {
+    height: 70vh;
+  }
 }

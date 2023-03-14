@@ -17,10 +17,10 @@ import { Link } from "react-scroll";
 import { ImHome, ImAddressBook, ImFilePdf } from "react-icons/im";
 import { MdAccountBox, MdWork } from "react-icons/md";
 import Resume from "../Images/Jyotiranjan.pdf";
+import DayNightToggle from "react-day-and-night-toggle";
 
 
-
-export default function SideNav() {
+export default function SideNav({handleDark,isDarkMode}) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
 
@@ -39,8 +39,18 @@ export default function SideNav() {
         <DrawerContent bgColor="black" color="white" zIndex="150">
           <DrawerCloseButton />
 
-          <Center mt="40%">
+          <Center mt="25%">
             <DrawerBody>
+            <Center mb="10px" >   <Button
+                    ref={btnRef}
+                    onClick={onClose}
+                    p="25px 35px"
+                    bgColor="black"
+                    colorScheme="teal"
+                  > 
+                <DayNightToggle onChange={handleDark} checked={isDarkMode} />
+              </Button></Center>
+             
               <Center>
                 <Link
                   to="/"
@@ -74,7 +84,7 @@ export default function SideNav() {
             </DrawerBody>
           </Center>
 
-          <Center mt="20px">
+          <Center mt="15px">
             <DrawerBody>
               <Center>
                 <Link
@@ -110,7 +120,7 @@ export default function SideNav() {
             </DrawerBody>
           </Center>
 
-          <Center mt="20px">
+          <Center mt="15px">
             <DrawerBody>
               <Center>
                 <Link
@@ -145,7 +155,7 @@ export default function SideNav() {
               </Center>
             </DrawerBody>
           </Center>
-          <Center mt="20px">
+          <Center mt="15px">
             <DrawerBody>
               <Center>
                 <Link
@@ -181,7 +191,7 @@ export default function SideNav() {
             </DrawerBody>
           </Center>
 
-          <Center mt="20px">
+          <Center mt="15px">
             <DrawerBody>
               <Center>
                 <Link
@@ -219,7 +229,7 @@ export default function SideNav() {
             </DrawerBody>
           </Center>
 
-          <Center mt="20px">
+          <Center mt="15px">
             <DrawerBody>
               <Center>
                 <a href={Resume} download={true}>

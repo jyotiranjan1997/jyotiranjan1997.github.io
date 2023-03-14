@@ -12,9 +12,8 @@ import Footer from "./Footer/Footer";
 
 
 
-export default function Home() {
-const[navbar,setNavbar]=React.useState(false)
-
+export default function Home({ handleDark ,isDarkMode}) {
+  const [navbar, setNavbar] = React.useState(false);
 
   const changeBackground = () => {
     if (window.scrollY >= 70) {
@@ -22,54 +21,55 @@ const[navbar,setNavbar]=React.useState(false)
     } else {
       setNavbar(false);
     }
-  }
+  };
 
-  window.addEventListener('scroll',changeBackground)
+  window.addEventListener("scroll", changeBackground);
 
+  return (
+    <div className="Home" id="/">
+      <Fade down>
+        <div className="Body">
+          <img
+            className="BackgroundImg"
+            src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png"
+            alt="bacground"
+          />
+        </div>
+      </Fade>
 
-
-    
-    return (
-      <div className="Home" id="/">
-        <Fade down>
-          <div className="Body">
-            <img
-              className="BackgroundImg"
-              src="https://www.springboard.com/blog/wp-content/uploads/2019/07/sb-blog-programming.png"
-              alt="bacground"
-            />
-          </div>
-        </Fade>
-        <div className="subBody">
-          <div id={navbar ? "Navbar2" : "Navbar"}>
-            <Navbar navbar={navbar} />
-          </div>
-          <Fade up>
-            <div>
-              <MyProfile />
-            </div>
-          </Fade>
+      <div className="subBody2">
+        <div id={navbar ? "Navbar2" : "Navbar"}>
+          <Navbar
+            navbar={navbar}
+            handleDark={handleDark}
+            isDarkMode={isDarkMode}
+          />
         </div>
-        <div className="About" id="about">
-          <About />
-        </div>
-        <div id="project">
-          <Projects />
-        </div>
-
-        <div id="skill">
-          <Skill />
-        </div>
-        <div>
-          <Github />
-        </div>
-        <div>
-          <Contact />
-        </div>
-        <div>
-          <Footer />
-        </div>
-      
+        <Fade up>  <div>
+            <MyProfile />
+          </div></Fade>
+         
+        
       </div>
-    );
+      <div className="About" id="about">
+        <About />
+      </div>
+      <div id="project">
+        <Projects />
+      </div>
+
+      <div id="skill">
+        <Skill />
+      </div>
+      <div className="over" >
+        <Github />
+      </div>
+      <div>
+        <Contact />
+      </div>
+      <div>
+        <Footer />
+      </div>
+    </div>
+  );
 }

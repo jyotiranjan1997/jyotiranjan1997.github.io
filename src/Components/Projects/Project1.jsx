@@ -1,4 +1,4 @@
-import prettypink from "../Images/preetypink.png";
+import beautyCart from "../Images/beautyCart.png";
 import kfc from "../Images/kfc.png";
 import {
   Box,
@@ -15,14 +15,14 @@ export default function Project1() {
     <>
       <div className="project-card" data-aos="flip-left">
         <Heading fontSize="24px" mb="25px">
-          Preety in Pink{" "}
+          Beauty Cart (E-Commerce){" "}
         </Heading>
-        <img src={prettypink} className="preetyPink" alt="pretty" />
+        <img src={beautyCart} className="preetyPink" alt="pretty" />
         <p>
-          Beauty Bebo is India’s fastest growing online retail store for the day
-          to day and special occasion need of the Makeup, Skin care, Hair care
-          products. We are cloning this E-commerce Website and maked name as
-          preety in pink.
+          Beauty Cart is an Ecommerce website that deals with special occasion
+          needs of Makeup, Skincare, Hair care, Personal care, Face wash,
+          Wallet, and Ayurveda products. It is an individual project built in 6
+          days.
         </p>
 
         <Flex p="2%" flexWrap="wrap" justifyContent="center">
