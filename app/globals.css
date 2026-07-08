@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #070b14;
+}
+
+::selection {
+  background: #22d3ee;
+  color: #070b14;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070b14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f2a44;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3ee;
+}
+
+@layer components {
+  .section-wrap {
+    @apply relative mx-auto w-full max-w-6xl px-5 sm:px-8 py-16 sm:py-24;
+  }
+
+  .section-eyebrow {
+    @apply flex items-center gap-3 text-xs sm:text-sm font-semibold uppercase tracking-[0.25em] text-accent mb-3;
+  }
+
+  .section-eyebrow::before {
+    content: "";
+    @apply h-px w-8 bg-accent;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-4xl font-bold text-white mb-10 sm:mb-14;
+  }
+
+  .card {
+    @apply rounded-2xl border border-border bg-surface/60 backdrop-blur-sm p-5 sm:p-7 transition-all duration-300;
+  }
+
+  .card:hover {
+    @apply border-accent/40 shadow-[0_0_30px_-10px_rgba(34,211,238,0.35)];
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-border bg-surface2/70 px-3.5 py-1.5 text-xs sm:text-sm font-medium text-gray-200 transition-colors duration-200;
+  }
+
+  .pill:hover {
+    @apply border-accent/50 text-accent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-accent to-accent2 px-6 py-3 text-sm sm:text-base font-semibold text-ink shadow-lg shadow-accent/20 transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-accent/30;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border border-border bg-surface2/60 px-6 py-3 text-sm sm:text-base font-semibold text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/50 hover:text-accent;
+  }
+
+  .icon-badge {
+    @apply flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-border bg-surface2/70 text-lg text-accent;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
