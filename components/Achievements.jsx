@@ -1,5 +1,5 @@
 import { FaTrophy } from "react-icons/fa";
-import { achievements } from "@/data/portfolioData";
+import { achievements } from ".././data/portfolioData";
 import Reveal from "./Reveal";
 
 export default function Achievements() {

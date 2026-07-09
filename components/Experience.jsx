@@ -1,5 +1,5 @@
 import { FaBriefcase, FaCheckCircle } from "react-icons/fa";
-import { experience } from "@/data/portfolioData";
+import { experience } from ".././data/portfolioData";
 import Reveal from "./Reveal";
 
 export default function Experience() {

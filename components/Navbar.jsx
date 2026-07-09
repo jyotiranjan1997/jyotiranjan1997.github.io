@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes, FaDownload } from "react-icons/fa";
-import { navLinks, profile } from "@/data/portfolioData";
+import { navLinks, profile } from ".././data/portfolioData";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

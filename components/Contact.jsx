@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaDownload,
 } from "react-icons/fa";
-import { profile } from "@/data/portfolioData";
+import { profile } from ".././data/portfolioData";
 import Reveal from "./Reveal";
 
 export default function Contact() {

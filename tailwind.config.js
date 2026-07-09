@@ -1,9 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,jsx}",
-    "./components/**/*.{js,jsx}",
-    "./data/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx,ts,tsx,mdx}",
+    "./components/**/*.{js,jsx,ts,tsx,mdx}",
+    "./data/**/*.{js,jsx,ts,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -36,23 +36,13 @@ module.exports = {
       },
       keyframes: {
         blob: {
-          "0%, 100%": { transform: "translate(0px, 0px) scale(1)" },
-          "33%": { transform: "translate(30px, -40px) scale(1.1)" },
-          "66%": { transform: "translate(-20px, 20px) scale(0.95)" },
-        },
-        fadeUp: {
-          "0%": { opacity: "0", transform: "translateY(24px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        pulseSlow: {
-          "0%, 100%": { opacity: "1" },
-          "50%": { opacity: "0.5" },
+          "0%,100%": { transform: "translate(0,0) scale(1)" },
+          "33%": { transform: "translate(30px,-40px) scale(1.1)" },
+          "66%": { transform: "translate(-20px,20px) scale(0.95)" },
         },
       },
       animation: {
         blob: "blob 12s infinite ease-in-out",
-        fadeUp: "fadeUp 0.7s ease forwards",
-        pulseSlow: "pulseSlow 2.5s infinite ease-in-out",
       },
     },
   },

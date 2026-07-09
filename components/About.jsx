@@ -1,5 +1,5 @@
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaLanguage } from "react-icons/fa";
-import { profile, languages } from "@/data/portfolioData";
+import { profile, languages } from ".././data/portfolioData";
 import Reveal from "./Reveal";
 
 export default function About() {

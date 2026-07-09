@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaArrowRight, FaBriefcase } from "react-icons/fa";
-import { profile } from "@/data/portfolioData";
+import { profile } from ".././data/portfolioData";
 import Reveal from "./Reveal";
 
 export default function Hero() {

@@ -1,4 +1,4 @@
-import { skillGroups, extraSkills } from "@/data/portfolioData";
+import { skillGroups, extraSkills } from ".././data/portfolioData";
 import { SkillIcon } from "./icons";
 import Reveal from "./Reveal";
 

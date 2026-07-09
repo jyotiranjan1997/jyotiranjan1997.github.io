@@ -1,5 +1,5 @@
 import { FaGraduationCap, FaCertificate } from "react-icons/fa";
-import { education, certifications } from "@/data/portfolioData";
+import { education, certifications } from ".././data/portfolioData";
 import Reveal from "./Reveal";
 
 export default function Education() {

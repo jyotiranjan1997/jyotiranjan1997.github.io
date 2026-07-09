@@ -1,5 +1,5 @@
 import { FaChevronRight, FaExternalLinkAlt } from "react-icons/fa";
-import { projects } from "@/data/portfolioData";
+import { projects } from ".././data/portfolioData";
 import ProjectMockup from "./ProjectMockup";
 import Reveal from "./Reveal";
 
