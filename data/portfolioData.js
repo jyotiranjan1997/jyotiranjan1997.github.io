@@ -15,7 +15,7 @@ export const profile = {
   heroHighlights: [
     { label: "Years of Experience", value: "3+" },
     { label: "Leads Managed in CRM", value: "100K+" },
-    { label: "REST APIs Built", value: "40+" },
+    { label: "REST APIs Built", value: "200+" },
     { label: "Avg. API Response", value: "<350ms" },
   ],
 };
