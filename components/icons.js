@@ -26,6 +26,12 @@ import {
   FaLeaf,
   FaCloud,
   FaBolt,
+  FaRobot,
+  FaBrain,
+  FaMagic,
+  FaBug,
+  FaComments,
+  FaSlack,
 } from "react-icons/fa";
 import {
   SiJavascript,
@@ -37,6 +43,7 @@ import {
   SiMongodb,
   SiMysql,
   SiPostman,
+  SiClaude,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 
@@ -80,6 +87,14 @@ export const iconMap = {
   postman: SiPostman,
   vscode: TbBrandVscode,
   review: FaCheckCircle,
+  brain: FaBrain,
+  openai: FaRobot,
+  claude: SiClaude,
+  bolt: FaBolt,
+  magic: FaMagic,
+  bug: FaBug,
+  chatbot: FaComments,
+  slack: FaSlack,
 };
 
 export function SkillIcon({ name, className }) {

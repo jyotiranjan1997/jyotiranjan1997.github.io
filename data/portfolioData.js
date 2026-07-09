@@ -2,19 +2,19 @@ export const profile = {
   name: "Jyotiranjan Mohanty",
   title: "Senior Full Stack Developer",
   tagline: "MERN Stack • REST APIs • Automation",
-  location: "New Delhi, India",
+  location: "Jagatsinghpur, India",
   phone: "+91-6371660063",
   email: "mohanty.ryzen@gmail.com",
   linkedin: "https://linkedin.com/in/jyoti-ranjan-mohanty-81a240193/",
   github: "https://github.com/jyotiranjan1997/",
-  resumeFile: "/JyotiranjanMohanty.pdf",
-  photo: "/JyotiranjanMohanty.png",
+  resumeFile: "/resume.pdf",
+  photo: "/profile-placeholder.svg",
   summary:
-    "Senior Full Stack Developer with 3+ years of experience building web applications, CRM systems, and REST APIs using the MERN stack. Experienced in frontend development, backend architecture, database optimization, deployment, and server management. I've worked on automation workflows, WhatsApp integrations, and scalable business applications — independently handling development, deployment, and production support end to end.",
+    "Senior Full Stack Developer with 3+ years of experience building web applications, CRM systems, and REST APIs using the MERN stack. Experienced in frontend development, backend architecture, database optimization, deployment, and server management. I've worked on automation workflows, WhatsApp integrations, and scalable business applications — independently handling development, deployment, and production support end to end. I also work AI-augmented — using tools like ChatGPT, Claude, Bolt.new, and Lovable to scaffold pages and features in minutes, then manually integrating them with real backend systems, debugging edge cases, and optimizing what the AI gets wrong.",
   heroHighlights: [
     { label: "Years of Experience", value: "3+" },
     { label: "Leads Managed in CRM", value: "100K+" },
-    { label: "REST APIs Built", value: "200+" },
+    { label: "REST APIs Built", value: "40+" },
     { label: "Avg. API Response", value: "<350ms" },
   ],
 };
@@ -85,6 +85,20 @@ export const skillGroups = [
       { name: "Interakt (WhatsApp API)", icon: "whatsapp" },
       { name: "SMTP / Nodemailer", icon: "mail" },
       { name: "PhonePe", icon: "payment" },
+      { name: "AI Chatbot Integration", icon: "chatbot" },
+      { name: "Slack Bot Automation", icon: "slack" },
+    ],
+  },
+  {
+    title: "AI-Assisted Development",
+    icon: "brain",
+    skills: [
+      { name: "ChatGPT / OpenAI", icon: "openai" },
+      { name: "Claude (Anthropic)", icon: "claude" },
+      { name: "Bolt.new", icon: "bolt" },
+      { name: "Lovable", icon: "magic" },
+      { name: "Rapid AI Prototyping", icon: "brain" },
+      { name: "AI-Assisted Debugging & Integration", icon: "bug" },
     ],
   },
 ];
@@ -110,7 +124,8 @@ export const experience = [
       "Implemented secure authentication and authorization using JWT, bcrypt, RBAC, and session management.",
       "Managed IIS production servers, SSL/TLS setup, domain configuration, deployment, and application monitoring across multiple projects.",
       "Optimized MongoDB and MySQL performance using indexing, aggregation pipelines, and schema improvements.",
-      "Built and maintained multiple business websites and landing pages with responsive frontend implementations, utilizing AI-assisted development tools to reduce delivery time.",
+      "Built and maintained multiple business websites and landing pages using AI tools (ChatGPT, Claude, Bolt.new, Lovable) to generate pages in minutes, then manually integrating them with the backend, debugging, and optimizing what the AI didn't get right.",
+      "Built AI chatbot and Slack bot automations for internal messaging and support workflows, cutting manual follow-up work for the team.",
       "Independently handled end-to-end development including requirement analysis, backend architecture, deployment, debugging, and production support.",
     ],
   },
@@ -180,6 +195,7 @@ export const achievements = [
   "Integrated third-party services including WhatsApp APIs, email automation, and payment-related workflows.",
   "Managed deployment, IIS hosting, SSL setup, and production support for multiple applications.",
   "Handled development, debugging, deployment, and maintenance tasks independently across multiple projects.",
+  "Adopted an AI-augmented workflow (ChatGPT, Claude, Bolt.new, Lovable) to prototype pages and features in minutes, then manually integrated and optimized them — cutting delivery time without cutting corners.",
 ];
 
 export const education = [
