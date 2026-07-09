@@ -8,7 +8,7 @@ export const profile = {
   linkedin: "https://linkedin.com/in/jyoti-ranjan-mohanty-81a240193/",
   github: "https://github.com/jyotiranjan1997/",
   resumeFile: "/resume.pdf",
-  photo: "/profile-placeholder.svg",
+  photo: "/JyotiranjanMohanty.png",
 
   summary:
     "Senior Full Stack Developer with 3+ years of experience building web applications, CRM systems, and REST APIs using the MERN stack. Experienced in frontend development, backend architecture, database optimization, deployment, and server management. I've worked on automation workflows, WhatsApp integrations, and scalable business applications — independently handling development, deployment, and production support end to end. I also work AI-augmented — using tools like ChatGPT, Claude, Bolt.new, and Lovable to scaffold pages and features in minutes, then manually integrating them with real backend systems, debugging edge cases, and optimizing what the AI gets wrong.",
