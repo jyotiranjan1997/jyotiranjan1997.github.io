@@ -120,7 +120,7 @@ export const experience = [
     note: "Promoted from MERN Stack Developer to Senior Full Stack Developer within 18 months for owning end-to-end delivery and infrastructure of the company's flagship CRM and web platforms.",
     bullets: [
       "Developed and maintained a custom CRM system handling 100,000+ leads and supporting daily operations across sales and support teams.",
-      "Built and optimized 40+ REST APIs using caching, indexing, and query optimization techniques, reducing average response time to under 350ms.",
+      "Built and optimized 200+ REST APIs using caching, indexing, and query optimization techniques, reducing average response time to under 350ms.",
       "Integrated WhatsApp automation through the Interakt API and email workflows using SMTP/Nodemailer for lead updates, meetings, and notification systems.",
       "Implemented secure authentication and authorization using JWT, bcrypt, RBAC, and session management.",
       "Managed IIS production servers, SSL/TLS setup, domain configuration, deployment, and application monitoring across multiple projects.",
