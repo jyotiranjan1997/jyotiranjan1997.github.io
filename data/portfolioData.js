@@ -2,7 +2,7 @@ export const profile = {
   name: "Jyotiranjan Mohanty",
   title: "Senior Full Stack Developer",
   tagline: "MERN Stack • REST APIs • Automation",
-  location: "Jagatsinghpur, India",
+  location: "New Delhi, India",
   phone: "+91-6371660063",
   email: "mohanty.ryzen@gmail.com",
   linkedin: "https://linkedin.com/in/jyoti-ranjan-mohanty-81a240193/",
