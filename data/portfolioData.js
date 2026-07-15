@@ -7,7 +7,7 @@ export const profile = {
   email: "mohanty.ryzen@gmail.com",
   linkedin: "https://linkedin.com/in/jyoti-ranjan-mohanty-81a240193/",
   github: "https://github.com/jyotiranjan1997/",
-  resumeFile: "/resume.pdf",
+  resumeFile: "/JyotiranjanMohanty.pdf",
   photo: "/JyotiranjanMohanty.png",
 
   summary:
