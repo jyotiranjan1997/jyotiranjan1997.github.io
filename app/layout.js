@@ -1,6 +1,6 @@
 import "./globals.css";
 
-const SITE_URL = "https://jyotiranjantech.in";
+const SITE_URL = "https://www.jyotiranjantech.in";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

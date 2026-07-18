@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://www.jyotiranjantech.in
+Sitemap: https://www.jyotiranjantech.in/sitemap.xml

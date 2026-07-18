@@ -1,4 +1,4 @@
-const SITE_URL = "https://jyotiranjantech.in";
+const SITE_URL = "https://www.jyotiranjantech.in";
 
 export default function robots() {
   return {
